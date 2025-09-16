@@ -87,10 +87,7 @@ body {
     line-height: 1.6;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     color: var(--text-color);
     font-weight: var(--font-semibold);
     line-height: 1.2;
@@ -329,7 +326,6 @@ img {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: brightness(0.4) contrast(1.1);
 }
 
 .home__hero-overlay {
@@ -338,7 +334,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.3) 0%, rgba(16, 185, 129, 0.2) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 100%);
     z-index: 2;
 }
 
@@ -959,12 +955,9 @@ img {
 
 /* ===== ANIMATIONS ===== */
 @keyframes float {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0px);
     }
-
     50% {
         transform: translateY(-20px);
     }
@@ -974,31 +967,24 @@ img {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
 
 @keyframes wave {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: scaleX(1);
     }
-
     50% {
         transform: scaleX(1.1);
     }
 }
 
 @keyframes sway {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: rotate(-5deg);
     }
-
     50% {
         transform: rotate(5deg);
     }
