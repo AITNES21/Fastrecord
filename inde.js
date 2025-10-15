@@ -292,10 +292,25 @@ function animateCounters() {
     const counters = document.querySelectorAll('.stat__number');
 
     counters.forEach(counter => {
-        const target = parseInt(counter.textContent.replace(/\D/g, ''));
-        const suffix = counter.textContent.replace(/[0-9]/g, '');
+        const text = counter.textContent.trim();
+
+        // Excluir elementos que contienen "/" (como 24/7) o ":" (como horarios)
+        if (text.includes('/') || text.includes(':')) {
+            return; // No animar este contador
+        }
+
+        // Extraer el número objetivo y el sufijo
+        const target = parseInt(text.replace(/\D/g, ''));
+        const suffix = text.replace(/[0-9]/g, '');
+
+        // Validar que hay un número válido
+        if (isNaN(target)) {
+            return;
+        }
+
         let current = 0;
         const increment = target / 100;
+
         const timer = setInterval(() => {
             current += increment;
             if (current >= target) {
@@ -426,6 +441,9 @@ initParallax();
 /*==================== FORM VALIDATION ====================*/
 function initFormValidation() {
     const form = document.getElementById('contact-form');
+
+    if (!form) return;
+
     const inputs = form.querySelectorAll('.form__input');
 
     inputs.forEach(input => {
@@ -502,12 +520,16 @@ function initMobileMenu() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
 
+    if (!navToggle || !navMenu) return;
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
             navMenu.classList.remove('show-menu');
             const icon = navToggle.querySelector('i');
-            icon.classList.replace('fa-times', 'fa-bars');
+            if (icon) {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
         }
     });
 
@@ -516,7 +538,9 @@ function initMobileMenu() {
         if (e.key === 'Escape' && navMenu.classList.contains('show-menu')) {
             navMenu.classList.remove('show-menu');
             const icon = navToggle.querySelector('i');
-            icon.classList.replace('fa-times', 'fa-bars');
+            if (icon) {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
         }
     });
 }
