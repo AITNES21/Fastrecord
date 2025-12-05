@@ -281,6 +281,31 @@ img {
     border-radius: 1px;
 }
 
+.nav__link--featured {
+    background: var(--gradient-primary);
+    color: var(--white-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-weight: var(--font-semibold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav__link--featured:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.nav__link--featured::after {
+    display: none;
+}
+
+.nav__link--featured i {
+    font-size: 0.875rem;
+}
+
 .nav__toggle {
     display: none;
     cursor: pointer;
