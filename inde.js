@@ -623,6 +623,7 @@ window.FastRecord = {
     animateCounters,
     initFloatingElements,
     initParallax
+<<<<<<< HEAD
 };
 /*==================== FAQ ACCORDION FUNCTIONALITY ====================*/
 function initFAQ() {
@@ -653,3 +654,6 @@ if (document.readyState === "loading") {
 } else {
     initFAQ();
 }
+=======
+};
+>>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a

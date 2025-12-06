@@ -1464,6 +1464,7 @@ img {
     }
 
     .hero {
+<<<<<<< HEAD
         height: auto;
         min-height: 90vh;
         padding: 5rem 0 3rem;
@@ -1492,10 +1493,15 @@ img {
         font-size: 0.9375rem;
         padding: 0.625rem 1.25rem;
         margin-bottom: var(--mb-2-5);
+=======
+        height: 80vh;
+        min-height: 600px;
+>>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a
     }
 
     .hero__buttons {
         flex-direction: column;
+<<<<<<< HEAD
         gap: 1.25rem;
         padding: 0 0.5rem;
     }
@@ -1506,6 +1512,8 @@ img {
 
     .hero__scroll {
         bottom: 2.5rem;
+=======
+>>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a
     }
 
     .quick-features__grid {
@@ -1562,6 +1570,7 @@ img {
 
 @media screen and (max-width: 576px) {
     .section {
+<<<<<<< HEAD
         padding: 3.5rem 0;
     }
 
@@ -1662,6 +1671,32 @@ img {
         width: 42px;
         height: 42px;
         font-size: 1.125rem;
+=======
+        padding: 4rem 0;
+    }
+
+    .hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .hero__location {
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    .button--large {
+        padding: 1rem 2rem;
+        font-size: var(--normal-font-size);
+>>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a
     }
 
     .gallery__main {
@@ -1684,6 +1719,7 @@ img {
     .floor__image {
         height: 200px;
     }
+<<<<<<< HEAD
 }
 
 /* Extra small devices */
@@ -1729,4 +1765,6 @@ img {
     .button--large i {
         font-size: 0.9375rem;
     }
+=======
+>>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a
 }
