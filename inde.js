@@ -70,6 +70,18 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 
+/*==================== SCROLL UP BUTTON CLICK ====================*/
+const scrollUpButton = document.getElementById('scroll-up');
+if (scrollUpButton) {
+    scrollUpButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 /*==================== SMOOTH SCROLL ====================*/
 const scrollLinks = document.querySelectorAll('a[href^="#"]');
 
