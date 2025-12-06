@@ -1,6 +1,5 @@
 /*==================== GALLERY IMAGES ====================*/
 const galleryImages = [
-<<<<<<< HEAD
     // Exteriores de día
     'img/canflowers/casaexterior.webp',
     'img/canflowers/casaexteriorft2.webp',
@@ -44,32 +43,6 @@ const galleryImages = [
 
     // Decoración
     'img/canflowers/decoracion.webp'
-=======
-    'img/canflowers/exterior-night.jpg',
-    'img/canflowers/exterior-day.jpg',
-    'img/canflowers/entrance.jpg',
-    'img/canflowers/pool-main.jpg',
-    'img/canflowers/pool-deck.jpg',
-    'img/canflowers/pool-water.jpg',
-    'img/canflowers/pool-night.jpg',
-    'img/canflowers/barbecue.jpg',
-    'img/canflowers/garden.jpg',
-    'img/canflowers/cabin.jpg',
-    'img/canflowers/elephant.jpg',
-    'img/canflowers/living-room.jpg',
-    'img/canflowers/living-room-2.jpg',
-    'img/canflowers/dining-room.jpg',
-    'img/canflowers/kitchen.jpg',
-    'img/canflowers/bedroom-1.jpg',
-    'img/canflowers/bedroom-2.jpg',
-    'img/canflowers/bedroom-3.jpg',
-    'img/canflowers/bathroom.jpg',
-    'img/canflowers/terrace.jpg',
-    'img/canflowers/terrace-view.jpg',
-    'img/canflowers/terrace-sunset.jpg',
-    'img/canflowers/aerial-view.jpg',
-    'img/canflowers/aerial-garden.jpg'
->>>>>>> ba66379439ad475eadef9d3c5071b2e121413b4a
 ];
 
 /*==================== MENU SHOW Y HIDDEN ====================*/
