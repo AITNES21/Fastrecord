@@ -1,29 +1,48 @@
 /*==================== GALLERY IMAGES ====================*/
 const galleryImages = [
-    'img/canflowers/exterior-night.jpg',
-    'img/canflowers/exterior-day.jpg',
-    'img/canflowers/entrance.jpg',
-    'img/canflowers/pool-main.jpg',
-    'img/canflowers/pool-deck.jpg',
-    'img/canflowers/pool-water.jpg',
-    'img/canflowers/pool-night.jpg',
-    'img/canflowers/barbecue.jpg',
-    'img/canflowers/garden.jpg',
-    'img/canflowers/cabin.jpg',
-    'img/canflowers/elephant.jpg',
-    'img/canflowers/living-room.jpg',
-    'img/canflowers/living-room-2.jpg',
-    'img/canflowers/dining-room.jpg',
-    'img/canflowers/kitchen.jpg',
-    'img/canflowers/bedroom-1.jpg',
-    'img/canflowers/bedroom-2.jpg',
-    'img/canflowers/bedroom-3.jpg',
-    'img/canflowers/bathroom.jpg',
-    'img/canflowers/terrace.jpg',
-    'img/canflowers/terrace-view.jpg',
-    'img/canflowers/terrace-sunset.jpg',
-    'img/canflowers/aerial-view.jpg',
-    'img/canflowers/aerial-garden.jpg'
+    // Exteriores de día
+    'img/canflowers/casaexterior.webp',
+    'img/canflowers/casaexteriorft2.webp',
+
+    // Exteriores de noche
+    'img/canflowers/casaexteriornoche.webp',
+    'img/canflowers/casaexteriornocheft2.webp',
+
+    // Piscina y áreas de relax
+    'img/canflowers/piscinaychillout.webp',
+    'img/canflowers/piscinaychilloutft2.webp',
+
+    // Jardín y exteriores
+    'img/canflowers/jardinyfuente.webp',
+    'img/canflowers/puenteconrio.webp',
+
+    // Salones
+    'img/canflowers/salon.webp',
+    'img/canflowers/salonft2.webp',
+    'img/canflowers/saladeestar.webp',
+
+    // Cocina y comedor
+    'img/canflowers/cocina.webp',
+    'img/canflowers/mesaprincipal.webp',
+
+    // Habitaciones
+    'img/canflowers/habitacion1.webp',
+    'img/canflowers/habitacion2.webp',
+    'img/canflowers/habitacion3.webp',
+    'img/canflowers/habitacion4.webp',
+    'img/canflowers/habitacioin5.webp',
+
+    // Baño
+    'img/canflowers/bano.webp',
+
+    // Terrazas y vistas
+    'img/canflowers/terrazaft1.webp',
+    'img/canflowers/terrazaft2.webp',
+    'img/canflowers/vistas.webp',
+    'img/canflowers/vistasft2.webp',
+
+    // Decoración
+    'img/canflowers/decoracion.webp'
 ];
 
 /*==================== MENU SHOW Y HIDDEN ====================*/

@@ -1474,3 +1474,124 @@ img {
         padding: 1.25rem;
     }
 }
+
+/* ===== FAQ SECTION ===== */
+.faq {
+    background: var(--light-color);
+}
+
+.faq__header {
+    text-align: center;
+    margin-bottom: var(--mb-3);
+}
+
+.section__badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(16, 185, 129, 0.1));
+    color: var(--primary-color);
+    border-radius: 50px;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--mb-1);
+}
+
+.faq__container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq__item {
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--mb-1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq__item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.faq__question {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    user-select: none;
+}
+
+.faq__question h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: var(--font-semibold);
+    margin: 0;
+    flex: 1;
+}
+
+.faq__question i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.faq__item.active .faq__question i {
+    transform: rotate(180deg);
+}
+
+.faq__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 2rem;
+}
+
+.faq__item.active .faq__answer {
+    max-height: 500px;
+    padding: 0 2rem 1.5rem 2rem;
+}
+
+.faq__answer p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.faq__cta {
+    text-align: center;
+    margin-top: var(--mb-3);
+    padding: 2rem;
+    background: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.faq__cta p {
+    font-size: 1.125rem;
+    color: var(--text-color);
+    margin-bottom: var(--mb-1-5);
+    font-weight: var(--font-medium);
+}
+
+/* Responsive FAQ */
+@media screen and (max-width: 768px) {
+    .faq__question {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .faq__question h3 {
+        font-size: 1rem;
+    }
+
+    .faq__answer {
+        padding: 0 1.5rem;
+    }
+
+    .faq__item.active .faq__answer {
+        padding: 0 1.5rem 1.25rem 1.5rem;
+    }
+}

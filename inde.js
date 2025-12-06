@@ -624,3 +624,32 @@ window.FastRecord = {
     initFloatingElements,
     initParallax
 };
+/*==================== FAQ ACCORDION FUNCTIONALITY ====================*/
+function initFAQ() {
+    const faqItems = document.querySelectorAll(".faq__item");
+
+    faqItems.forEach((item) => {
+        const question = item.querySelector(".faq__question");
+
+        question.addEventListener("click", () => {
+            // Close all other items
+            const isActive = item.classList.contains("active");
+            
+            faqItems.forEach((otherItem) => {
+                otherItem.classList.remove("active");
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                item.classList.add("active");
+            }
+        });
+    });
+}
+
+// Initialize FAQ when DOM is loaded
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initFAQ);
+} else {
+    initFAQ();
+}
