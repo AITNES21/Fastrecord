@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Propiedades en Ibiza | Alquiler y Mantenimiento 24/7 | FastRecord</title>
-    <meta name="description"
-        content="✓ Gestión integral de propiedades en Ibiza y Madrid ✓ +25 años de experiencia ✓ Alquiler de villas de lujo ✓ Mantenimiento de jardines y piscinas ✓ Servicio 24/7. Confía en los expertos.">
+    <meta name="description" content="Gestión integral de propiedades en Ibiza y Madrid. Más de 25 años de experiencia. Alquiler de villas de lujo, mantenimiento profesional de jardines y piscinas. Servicio 24/7.">
     <meta name="keywords" content="gestión propiedades ibiza, alquiler villas lujo ibiza, mantenimiento piscinas ibiza, alquiler inmuebles madrid, gestión inmobiliaria, mantenimiento jardines, alquiler vacacional ibiza">
     <link rel="canonical" href="https://fastrecord.es/">
 
@@ -27,12 +26,13 @@
     <meta property="twitter:description" content="Gestión integral de propiedades en Ibiza. +25 años de experiencia. Alquiler de villas de lujo, mantenimiento de jardines y piscinas.">
     <meta property="twitter:image" content="https://fastrecord.es/img/icon.png">
 
-    <link rel="stylesheet" href="inde.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="preload" as="image" href="img/ft1.webp" fetchpriority="high">
 
     <!-- Schema Markup JSON-LD -->
     <script type="application/ld+json">
@@ -44,7 +44,7 @@
       "description": "Gestión integral de propiedades de lujo en Ibiza y Madrid. Especialistas en alquiler de villas exclusivas, mantenimiento de jardines y piscinas, y gestión inmobiliaria de alto standing.",
       "url": "https://fastrecord.es",
       "telephone": "+34679418741",
-      "email": "info@fastrecord.es",
+      "email": "eva@fastrecord.es",
       "address": [
         {
           "@type": "PostalAddress",
@@ -82,14 +82,6 @@
         ],
         "opens": "00:00",
         "closes": "23:59"
-      },
-      "sameAs": [
-        "https://fastrecord.es"
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "127"
       }
     }
     </script>
@@ -268,9 +260,9 @@
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
     </header>
@@ -281,7 +273,7 @@
         <section class="home section" id="home">
             <div class="home__hero">
                 <div class="home__hero-bg">
-                    <img src="img/ft1.jpg" alt="Apartamento moderno FastRecord" class="home__hero-img">
+                    <img src="img/ft1.webp" alt="Apartamento moderno FastRecord" class="home__hero-img" loading="eager" fetchpriority="high" decoding="async" width="1600" height="900">
                     <div class="home__hero-overlay"></div>
                 </div>
                 <div class="home__hero-content">
@@ -324,8 +316,8 @@
             <div class="container">
                 <div class="about__container">
                     <div class="about__image">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
-                            alt="Quiénes somos FastRecord" class="about__img">
+                        <img src="img/about/equipo.webp"
+                            alt="Quiénes somos FastRecord" class="about__img" loading="lazy" decoding="async" width="1600" height="1067">
                     </div>
                     <div class="about__content">
                         <h2 class="section__title">Líderes en Gestión Inmobiliaria de Alto Standing</h2>
@@ -391,8 +383,8 @@
                 <div class="services__container">
                     <div class="service__card">
                         <div class="service__image">
-                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
-                                alt="Gestión de alquiler integral">
+                            <img src="img/services/alquiler.webp"
+                                alt="Gestión de alquiler integral" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -407,8 +399,8 @@
 
                     <div class="service__card">
                         <div class="service__image">
-                            <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                alt="Mantenimiento integral de inmuebles">
+                            <img src="img/services/mantenimiento.webp"
+                                alt="Mantenimiento integral de inmuebles" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -423,8 +415,8 @@
 
                     <div class="service__card">
                         <div class="service__image">
-                            <img src="https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                alt="Servicio de limpieza">
+                            <img src="img/services/limpieza.webp"
+                                alt="Servicio de limpieza" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -439,7 +431,7 @@
 
                     <div class="service__card">
                         <div class="service__image">
-                            <img src="img/ft3.jpg" alt="Mantenimiento de jardines y piscinas">
+                            <img src="img/services/jardin.webp" alt="Mantenimiento de jardines y piscinas" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -454,8 +446,8 @@
 
                     <div class="service__card">
                         <div class="service__image">
-                            <img src="https://images.unsplash.com/photo-1560520653-9e0e4c89eb11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80"
-                                alt="Alquiler con opción a compra">
+                            <img src="img/services/inversion.webp"
+                                alt="Alquiler con opción a compra" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -471,8 +463,8 @@
                     <div class="service__card featured">
                         <div class="service__badge">Especial Verano</div>
                         <div class="service__image">
-                            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1980&q=80"
-                                alt="Preparación para el verano">
+                            <img src="img/services/verano.webp"
+                                alt="Preparación para el verano" loading="lazy" decoding="async" width="800" height="600">
                         </div>
                         <div class="service__content">
                             <div class="service__icon">
@@ -492,8 +484,8 @@
         <section class="ibiza section" id="ibiza">
             <div class="ibiza__hero">
                 <div class="ibiza__hero-bg">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                        alt="Ibiza sunset view" class="ibiza__hero-img">
+                    <img src="img/ibiza/atardecer.webp"
+                        alt="Atardecer en Ibiza" class="ibiza__hero-img" loading="lazy" decoding="async" width="1600" height="900">
                     <div class="ibiza__hero-overlay"></div>
                 </div>
                 <div class="ibiza__hero-content">
@@ -632,7 +624,7 @@
                         <div class="contact__card">
                             <i class="fas fa-envelope"></i>
                             <h3>Email</h3>
-                            <p>info@fastrecord.es</p>
+                            <p>eva@fastrecord.es</p>
                         </div>
 
                         <div class="contact__card">
@@ -648,36 +640,23 @@
                         </div>
                     </div>
 
-                    <form class="contact__form" id="contact-form">
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Tu nombre" required>
+                    <div class="contact__cta">
+                        <h3 class="contact__cta-title">Hablemos directamente</h3>
+                        <p class="contact__cta-text">Cuéntanos qué necesitas y te respondemos al momento. Sin formularios, sin esperas.</p>
+                        <div class="contact__cta-buttons">
+                            <a href="tel:+34679418741" class="button button--primary button--large">
+                                <i class="fas fa-phone"></i>
+                                Llamar Ahora
+                            </a>
+                            <a href="https://wa.me/34679418741?text=Hola%2C%20me%20interesa%20vuestra%20gesti%C3%B3n%20de%20propiedades"
+                               class="button button--whatsapp button--large"
+                               target="_blank"
+                               rel="noopener">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
                         </div>
-                        <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Tu email" required>
-                        </div>
-                        <div class="form__group">
-                            <input type="tel" class="form__input" placeholder="Tu teléfono">
-                        </div>
-                        <div class="form__group">
-                            <select class="form__input" required>
-                                <option value="">Selecciona un servicio</option>
-                                <option value="alquiler">Gestión de Alquiler</option>
-                                <option value="mantenimiento">Mantenimiento de Inmuebles</option>
-                                <option value="limpieza">Servicio de Limpieza</option>
-                                <option value="jardines">Jardines y Piscinas</option>
-                                <option value="compra">Alquiler con Opción a Compra</option>
-                                <option value="verano">Preparación para el Verano</option>
-                            </select>
-                        </div>
-                        <div class="form__group">
-                            <textarea class="form__input form__textarea"
-                                placeholder="Cuéntanos sobre tu propiedad y qué necesitas" required></textarea>
-                        </div>
-                        <button type="submit" class="button button--primary form__button">
-                            <i class="fas fa-paper-plane"></i>
-                            Enviar Consulta
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -714,9 +693,8 @@
                     <div class="footer__links-group">
                         <h3 class="footer__title">Zonas</h3>
                         <ul class="footer__list">
-                            <li><a href="#" class="footer__link">Madrid</a></li>
+                            <li><a href="#contact" class="footer__link">Madrid</a></li>
                             <li><a href="#ibiza" class="footer__link">Ibiza</a></li>
-                            <li><a href="#" class="footer__link">Otras Localizaciones</a></li>
                         </ul>
                     </div>
 
@@ -724,8 +702,8 @@
                         <h3 class="footer__title">Contacto</h3>
                         <ul class="footer__list">
                             <li><span class="footer__info">679 418 741</span></li>
-                            <li><span class="footer__info">info@fastrecord.es</span></li>
-                            <li><span class="footer__info">Lun-Vie 10:00-20:00</span></li>
+                            <li><span class="footer__info">eva@fastrecord.es</span></li>
+                            <li><span class="footer__info">24/7 Disponible</span></li>
                         </ul>
                     </div>
                 </div>
@@ -733,8 +711,13 @@
 
             <div class="footer__bottom">
                 <p class="footer__copy">
-                    © 2024 FastRecord. Todos los derechos reservados.
+                    © 2026 FastRecord. Todos los derechos reservados.
                 </p>
+                <div class="footer__legal">
+                    <a href="aviso-legal.html" class="footer__link">Aviso Legal</a>
+                    <a href="privacidad.html" class="footer__link">Política de Privacidad</a>
+                    <a href="cookies.html" class="footer__link">Cookies</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -744,7 +727,12 @@
         <i class="fas fa-arrow-up"></i>
     </a>
 
-    <script src="inde.js"></script>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/34679418741" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
